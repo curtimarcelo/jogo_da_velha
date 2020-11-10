@@ -1,0 +1,143 @@
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(255,0,0);
+    background: radial-gradient(circle, rgba(255,0,0,0.3847402597402597) 0%, rgba(0,0,0,1) 100%);
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.6493506493506493) 27%, rgba(255,0,0,1) 99%);
+    background-color: rgb(60, 0, 0);
+    border-radius: 50px;
+}
+
+h2{
+    margin: none;
+    font-size: 30px;
+    padding-top: 5px;
+}
+
+/* botões*/
+
+#buttons-container button{
+    border: none;
+    border-radius: 55%;
+    padding: 10px 15px;
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.6493506493506493) 27%, rgba(255,0,0,1) 99%);
+}
+
+/* jogo*/
+
+#container{
+    display: flex;
+    width: 300px;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box{
+    height: 100px;
+    border: 5px solid #000;
+    box-sizing: border-box;
+    flex: 1 1 33%;
+}
+/*bordas*/
+
+#block_1, #block_2, #block_3{
+    border-top: none;
+}
+
+#block_1, #block_4, #block_7{
+    border-left: none;
+}
+
+#block_7, #block_8, #block_9{
+    border-bottom: none;
+}
+
+#block_3, #block_6, #block_9{
+    border-right: none;
+}
+
+/* simbolos*/
+
+.x{
+    font-size: 70px;
+    color: #000000;
+    display: inline-block;
+    line-height: 100px;
+}
+
+.o{
+   width: 50px;
+   height: 50px;
+   border: 5px solid whitesmoke;
+   border-radius: 50%; 
+   display: inline-block;
+   margin-top: 17px;
+}
+
+/* classe de esconder*/
+
+
+.hide{
+    display: none !important;
+}
+
+
+/*placar*/
+
+#score_board-container{
+    font-weight: bold;
+    margin-top: 40px;
+    font-size: 30px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#x_scoreboard {
+    color: #000000;
+    margin-right: 3px;
+}
+
+#o_scoreboard {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.score_box{
+    margin: 0 20px;
+}
+
+/*mensagem de vitoria*/
+
+#message p{
+    
+    color: white;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 150px;
+    width: 500px;
+    font-size: 60px;
+    background: rgb(160,255,0);
+    background: linear-gradient(63deg, rgba(160,255,0,1) 0%, rgba(0,68,191,1) 25%, rgba(143,0,0,1) 52%, rgba(74,77,0,1) 70%, rgba(0,0,0,1) 100%);
+}
